@@ -1,0 +1,266 @@
+/* Footer Styles for The Vault Gym */
+.section-13 {
+  height: auto;
+  padding: 60px 0 40px;
+  background-color: #191919;
+  color: #fff;
+  display: block;
+  box-shadow: none;
+}
+
+.container-2.w-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  color: #fff;
+  text-align: left;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-column {
+  width: 23%;
+  margin-bottom: 30px;
+  padding-right: 30px;
+}
+
+.footer-column.newsletter {
+  width: 31%;
+  margin-right: 40px;
+}
+
+.footer-heading {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-text {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #cccccc;
+}
+
+.footer-form-input {
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+}
+
+.footer-form-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.footer-form-row .footer-form-input {
+  width: 49%;
+  margin-right: 2%;
+}
+
+.footer-form-row .footer-form-input:last-child {
+  margin-right: 0;
+}
+
+.footer-btn {
+  display: inline-block;
+  padding: 9px 15px;
+  background-color: #F1D600;
+  color: #000;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+  width: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-align: center;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.footer-btn:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+}
+
+.footer-link {
+  display: block;
+  width: 100%;
+  color: #cccccc;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #bfa46a;
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #bfa46a;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+.footer-link:visited {
+  color: #d32f2f;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-right: 12px;
+  background-color: #333;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #bfa46a;
+}
+
+.social-icon i {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.touch-btn {
+  display: inline-block;
+  padding: 9px 15px;
+  background-color: #F1D600;
+  color: #000;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  width: auto;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-top: 20px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.touch-btn:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+}
+
+.footer-divider {
+  border-top: 1px solid #333;
+  margin: 30px 0;
+  width: 100%;
+}
+
+.location-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.location {
+  width: 31%;
+  margin-bottom: 20px;
+}
+
+.location h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.location p {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.4;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #999;
+}
+
+/* Company information text alignment */
+.section-13 .paragraph {
+  text-align: left;
+}
+
+/* FontAwesome icon replacement class */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 Arial, sans-serif;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 991px) {
+  .footer-column, 
+  .footer-column.newsletter {
+    width: 48%;
+  }
+  
+  .location {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-column, 
+  .footer-column.newsletter,
+  .location {
+    width: 100%;
+  }
+  
+  .footer-form-row {
+    display: block;
+  }
+  
+  .footer-form-row .footer-form-input {
+    width: 100%;
+    margin-right: 0;
+  }
+}
